@@ -90,6 +90,40 @@
                 "key": "ctrl+shift+r",
                 "command": "refreshIntellisenseKeyboardAction",
                 "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "ctrl+pageup",
+                "command": "cursorMove",
+                "when": "editorTextFocus",
+                "args": {
+                    "to": "viewPortTop"
+                }
+            },
+            {
+                "key": "ctrl+pagedown",
+                "command": "cursorMove",
+                "when": "editorTextFocus",
+                "args": {
+                    "to": "viewPortBottom"
+                }
+            },
+            {
+                "key": "ctrl+shift+pageup",
+                "command": "cursorMove",
+                "when": "editorTextFocus",
+                "args": {
+                    "to": "viewPortTop",
+                    "select":true
+                }
+            },
+            {
+                "key": "ctrl+shift+pagedown",
+                "command": "cursorMove",
+                "when": "editorTextFocus",
+                "args": {
+                    "to": "viewPortBottom",
+                    "select":true
+                }
             }
         ]
     }
